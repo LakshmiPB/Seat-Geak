@@ -28,7 +28,7 @@ class SportsEventsListController: UIViewController {
         self.eventsListTableView.dataSource = self
         self.eventsListTableView.delegate = self
         self.title = "Seat Geek Events"
-        self.searchController.searchBar.text = "NBA"
+        self.searchController.searchBar.text = "Soccer"
     }
     
     override func viewWillAppear(_ animated: Bool) {

